@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Samples with Web App</title>
+        <link rel="stylesheet" href="CSS/sample.css" type="text/css">
+        <script type="text/javascript" src="claimbingStaircase.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Hello! JS Samples with Web Application</h1>
+        </div>
+        <div>
+            <h5>Input your text:</h5>
+            <input type="text" id="textBoxSample1" title="Your input please"> 
+            <button id="buttonSample1" onclick="callJSSample1()" class="buttonClass">Run Sample1</button>
+        </div>
+        <div>
+            <h5>Input Numbers</h5>
+            <input type="number" id="numBox1" title="First Number">
+            <input type="number" id="numBox2" title="Second Number">
+            <button id="buttonSample2" onclick="callJSSample2()" class="buttonClass">Run Sample2</button>
+        </div>
+        <script>
+            function callJSSample1()
+            {
+                var s = document.querySelector("#textBoxSample1").value;
+                console.log("Button onclick handler");
+                callMe();
+                //VowelsAndConsonants(s);
+            }
+            function callJSSample2()
+            {
+                var n1 = document.querySelector("#numBox1").value;
+                var n2 = document.querySelector("#numBox2").value;
+                var id = document.querySelector("#buttonSample2");
+                id.style.background = "blue";
+                id.innerText = "BLUE";
+                //objectsTester(n1, n2);
+            }
+ /*           function callJSSample2()
+            {
+                var n1 = document.querySelector("#numBox1").value;
+                var n2 = document.querySelector("#numBox2").value;
+                document.write(taggedTemplateLiteral`Testing ${n1} and ${n2}`);
+
+            }
+*/        </script>
+    </body>
+</html>
